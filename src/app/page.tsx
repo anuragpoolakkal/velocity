@@ -7,6 +7,7 @@ import { cn } from "@/utils/tailwind-utils";
 import { FrameworkRotation } from "@/components/FrameworkRotation";
 import { Poppins } from "next/font/google";
 import { CountdownTimer } from "@/components/CountdownTimer";
+import { Cursor } from "@/components/Cursor";
 
 const poppins = Poppins({
 	weight: "700",
@@ -146,6 +147,7 @@ export default function Home() {
 					<CountdownTimer currentFramework={currentFramework} />
 				</div>
 			</div>
+			<Cursor buttonRef={buttonRef} />
 		</main>
 	);
 }
